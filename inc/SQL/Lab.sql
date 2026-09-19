@@ -26,7 +26,7 @@ create table reserva (
   id_lab int not null,
   hr_inicio datetime not null,
   hr_saida datetime not null,
-  ds_reserva enum('livre','reservado') default 'livre',
+  ds_reserva enum('livre','reservado') default 'livre' not null,
   foreign key (id_professor) references professores (id_professor),
   foreign key (id_turma) references turmas (id_turma),
   foreign key (id_lab) references labs (id_lab)
