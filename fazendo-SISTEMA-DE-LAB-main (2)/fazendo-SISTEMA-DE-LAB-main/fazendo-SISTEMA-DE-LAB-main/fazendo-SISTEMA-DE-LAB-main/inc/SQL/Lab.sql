@@ -31,28 +31,3 @@ create table reserva (
   foreign key (id_turma) references turmas (id_turma),
   foreign key (id_lab) references labs (id_lab)
 );
-
-insert into labs (nr_lab) values 
-(1),
-(2),
-(3),
-(4),
-(5);
-
-insert into professores (nm_professor, ds_email, ds_matricula) values 
-('joão silva', 'joao.silva@email.com', '12345'),
-('maria oliveira', 'maria.oliveira@email.com', '67890'),
-('carlos souza', 'carlos.souza@email.com', '11223'),
-('ana costa', 'ana.costa@email.com', '44556');
-
-insert into turmas (nm_turma, ds_turma) values 
-('1º ano a', 'turma do primeiro ano a'),
-('2º ano b', 'turma do segundo ano b'),
-('3º ano c', 'turma do terceiro ano c'),
-('técnico em informática', 'turma do curso técnico');
-
-insert into reserva (id_professor, id_turma, id_lab, hr_inicio, hr_saida, ds_reserva) values 
-(1, 1, 1, '2026-09-23 08:00:00', '2026-09-23 10:00:00', 'reservado'),
-(2, 2, 2, '2026-09-23 10:00:00', '2026-09-23 12:00:00', 'reservado'),
-(3, 3, 3, '2026-09-24 14:00:00', '2026-09-24 16:00:00', 'reservado'),
-(1, 4, 1, '2026-09-25 08:00:00', '2026-09-25 11:00:00', 'livre');
